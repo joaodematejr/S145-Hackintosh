@@ -1,6 +1,5 @@
 # Lenovo Ideapad S145 Hackintosh I5 10Th Gen
 
-![Lenovo Ideapad S145 Hackintosh I5 10Th Gen]
 
 ## My specs
 
