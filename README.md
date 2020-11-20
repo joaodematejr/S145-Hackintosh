@@ -46,5 +46,3 @@
 
 - Copy this EFI folder
 - Generate your own SMBIOS
-
-## Thanks
