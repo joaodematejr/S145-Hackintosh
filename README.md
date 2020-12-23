@@ -21,7 +21,7 @@
 - [x] Sleep
 - [x] TouchPad w/ Advanced Gestures
 - [x] WiFi w/ USB Adapter
-- [x] HDMI w/ Audio
+- [ ] HDMI w/ Audio
 - [x] Speakers
 - [x] P2 Audio Jack w/ Microphone
 - [x] Integrated Microphone
