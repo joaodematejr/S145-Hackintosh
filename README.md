@@ -6,9 +6,9 @@
 | Specs | Details |
 |------------|-------------------------------|
 | Model | Lenovo Ideapad S145 82DJ0001BR |
-| OS | macOS Big Sur 11.0.1 |
+| OS | macOS Big Sur 11.1.1 |
 | CPU | Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz |
-| RAM | 8 GB |
+| RAM | 20 GB |
 | iGPU | Intel HD Graphics ICL RVP BigSur 3072 |
 
 ### Works
