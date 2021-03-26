@@ -30,7 +30,7 @@
 ### Doesn't work
 
 - [ ] SD Card Reader (haven't tested)
-- [ ] Bluetooth (adapter needed)
+- [x] Bluetooth
 - [ ] Airdrop + Handoff (haven't tested)
 
 
