@@ -26,11 +26,11 @@
 - [x] P2 Audio Jack w/ Microphone
 - [x] Integrated Microphone
 - [x] Apple Services (iCloud, Apple Music, Apple TV, others..)
+- [x] Bluetooth
 
 ### Doesn't work
 
 - [ ] SD Card Reader (haven't tested)
-- [ ] Bluetooth (adapter needed)
 - [ ] Airdrop + Handoff (haven't tested)
 
 
