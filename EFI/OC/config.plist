@@ -892,7 +892,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>alcid=13 watchdog=0 -igfxblr -noDC9 igfxfw=2</string>
+				<string>-vi2c-force-polling alcid=13 watchdog=0 -igfxblr -noDC9 igfxfw=2</string>
 				<key>csr-active-config</key>
 				<data>hwcAAA==</data>
 				<key>run-efi-updater</key>
@@ -1021,7 +1021,7 @@
 			<key>ROM</key>
 			<data>z0vbTgDY</data>
 			<key>SystemSerialNumber</key>
-			<string>C02C5KYWML7H</string>
+			<string></string>
 			<key>SystemUUID</key>
 			<string>9CF37802-EBA2-4F55-BD4E-AF75B94E00D8</string>
 		</dict>
@@ -1154,6 +1154,8 @@
 			<key>AppleBootPolicy</key>
 			<false/>
 			<key>AppleDebugLog</key>
+			<false/>
+			<key>AppleEg2Info</key>
 			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
