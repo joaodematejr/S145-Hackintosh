@@ -46,3 +46,9 @@
 
 - Copy this EFI folder
 - Generate your own SMBIOS
+
+### Créditos
+
+- https://www.olarila.com/
+- MaLd0n (https://www.olarila.com/profile/2-mald0n/)
+
