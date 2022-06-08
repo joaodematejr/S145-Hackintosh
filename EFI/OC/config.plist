@@ -12,67 +12,13 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>DMAR.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
 				<string>DSDT.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
-		<array>
-			<dict>
-				<key>All</key>
-				<false/>
-				<key>Comment</key>
-				<string>Drop DMAR table</string>
-				<key>Enabled</key>
-				<true/>
-				<key>OemTableId</key>
-				<data></data>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>RE1BUg==</data>
-			</dict>
-		</array>
+		<array/>
 		<key>Patch</key>
-		<array>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>BaseSkip</key>
-				<integer>0</integer>
-				<key>Comment</key>
-				<string>RTC _STA</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>oAqTU1RBUwE=</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>oAqRCv8L//8=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>RFNEVA==</data>
-			</dict>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>EnableForAll</key>
@@ -111,7 +57,7 @@
 			<key>AllowRelocationBlock</key>
 			<false/>
 			<key>AvoidRuntimeDefrag</key>
-			<true/>
+			<false/>
 			<key>DevirtualiseMmio</key>
 			<true/>
 			<key>DisableSingleUser</key>
@@ -141,7 +87,7 @@
 			<key>ProvideMaxSlide</key>
 			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
-			<false/>
+			<true/>
 			<key>ResizeAppleGpuBars</key>
 			<integer>-1</integer>
 			<key>SetupVirtualMap</key>
@@ -178,6 +124,8 @@
 				<data>AQAAAA==</data>
 				<key>enable-dvmt-calc-fix</key>
 				<data>AQAAAA==</data>
+				<key>enable-gva-support</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
@@ -186,6 +134,8 @@
 				<data>AAAwAQ==</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>AADw/w==</data>
+				<key>unfairgva</key>
+				<data>AQAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -217,13 +167,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>AirportItlwm.kext</string>
+				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirportItlwm</string>
+				<string>Contents/MacOS/VirtualSMC</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -235,13 +185,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VirtualSMC.kext</string>
+				<string>ACPIBatteryManager.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VirtualSMC</string>
+				<string>Contents/MacOS/ACPIBatteryManager</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -278,6 +228,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AppleALC</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AppleMCEReporterDisabler.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -343,13 +311,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>ThermalSolution.kext</string>
+				<string>NVMeFix.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/ThermalSolution</string>
+				<string>Contents/MacOS/NVMeFix</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -361,13 +329,31 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VirtualSMC.kext/Contents/Plugins/SMCBatteryManager.kext</string>
+				<string>RestrictEvents.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/SMCBatteryManager</string>
+				<string>Contents/MacOS/RestrictEvents</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>ThermalSolution.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/ThermalSolution</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -605,15 +591,19 @@
 			<false/>
 			<key>CustomSMBIOSGuid</key>
 			<false/>
-			<key>DisableIoMapper</key>
+			<key>CustomPciSerialDevice</key>
 			<false/>
+			<key>DisableIoMapper</key>
+			<true/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
 			<true/>
 			<key>ExtendBTFeatureFlags</key>
-			<false/>
+			<true/>
 			<key>ExternalDiskIcons</key>
+			<false/>
+			<key>ForceAquantiaEthernet</key>
 			<false/>
 			<key>ForceSecureBootScheme</key>
 			<false/>
@@ -697,8 +687,6 @@
 			<integer>2147483650</integer>
 			<key>LogModules</key>
 			<string>*</string>
-			<key>SerialInit</key>
-			<false/>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
@@ -709,7 +697,7 @@
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
-			<true/>
+			<false/>
 			<key>AllowSetDefault</key>
 			<true/>
 			<key>AllowToggleSip</key>
@@ -739,6 +727,40 @@
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
+		<key>Serial</key>
+		<dict>
+			<key>Custom</key>
+			<dict>
+				<key>BaudRate</key>
+				<integer>115200</integer>
+				<key>ClockRate</key>
+				<integer>1843200</integer>
+				<key>DetectCable</key>
+				<false/>
+				<key>ExtendedTxFifoSize</key>
+				<integer>64</integer>
+				<key>FifoControl</key>
+				<integer>7</integer>
+				<key>LineControl</key>
+				<integer>7</integer>
+				<key>PciDeviceInfo</key>
+				<data>/w==</data>
+				<key>RegisterAccessWidth</key>
+				<integer>8</integer>
+				<key>RegisterBase</key>
+				<integer>1016</integer>
+				<key>RegisterStride</key>
+				<integer>1</integer>
+				<key>UseHardwareFlowControl</key>
+				<false/>
+				<key>UseMmio</key>
+				<false/>
+			</dict>
+			<key>Init</key>
+			<false/>
+			<key>Override</key>
+			<false/>
+		</dict>
 		<key>Tools</key>
 		<array/>
 	</dict>
@@ -749,7 +771,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-vi2c-force-polling -igfxdbeo alcid=20 watchdog=0 -igfxblr -noDC9 agdpmod=vit9696 brcmfx-country=#a -igfxmpc igfxpavp=1 igfxfw=2 keepsyms=1 -cputsclock</string>
+				<string>-v -vi2c-force-polling -igfxdbeo alcid=20 watchdog=0 -igfxblr -noDC9 -igfxmpc igfxfw=2 -cputsclock gfxonln=1 brcmfx-country=BR -lilubetaall</string>
 				<key>csr-active-config</key>
 				<data>/w8AAA==</data>
 			</dict>
@@ -837,9 +859,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02CCBZYML7H</string>
+			<string>C02CPMYDML7H</string>
 			<key>SystemUUID</key>
-			<string>6123C923-2015-42C8-9A50-7B93DEF2C69A</string>
+			<string>6400AB6F-53F7-495F-9437-0AF96DA2F929</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
@@ -848,11 +870,11 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C020095004NP8PGJA</string>
+			<string>C02019300QXP8PGUE</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>ixiC8saa</data>
+			<data>EOk2ovkp</data>
 			<key>SpoofVendor</key>
 			<false/>
 			<key>SystemMemoryStatus</key>
@@ -860,9 +882,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02CCBZYML7H</string>
+			<string>C02CPMYDML7H</string>
 			<key>SystemUUID</key>
-			<string>6123C923-2015-42C8-9A50-7B93DEF2C69A</string>
+			<string>6400AB6F-53F7-495F-9437-0AF96DA2F929</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -873,22 +895,22 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f////wgAAAA=</data>
 			<key>MLB</key>
-			<string>C020095004NP8PGJA</string>
+			<string>C02019300QXP8PGUE</string>
 			<key>ROM</key>
-			<data>ixiC8saa</data>
+			<data>EOk2ovkp</data>
 			<key>SystemSerialNumber</key>
-			<string>C02CCBZYML7H</string>
+			<string>C02CPMYDML7H</string>
 			<key>SystemUUID</key>
-			<string>6123C923-2015-42C8-9A50-7B93DEF2C69A</string>
+			<string>6400AB6F-53F7-495F-9437-0AF96DA2F929</string>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
 			<key>BIOSReleaseDate</key>
-			<string>01/06/2022</string>
+			<string>02/15/2022</string>
 			<key>BIOSVendor</key>
 			<string></string>
 			<key>BIOSVersion</key>
-			<string>1715.81.2.0.0</string>
+			<string>1731.100.130.0.0</string>
 			<key>BoardAssetTag</key>
 			<string></string>
 			<key>BoardLocationInChassis</key>
@@ -898,7 +920,7 @@
 			<key>BoardProduct</key>
 			<string>Mac-5F9802EFE386AA28</string>
 			<key>BoardSerialNumber</key>
-			<string>C020095004NP8PGJA</string>
+			<string>C02019300QXP8PGUE</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
@@ -908,7 +930,7 @@
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02CCBZYML7H</string>
+			<string>C02CPMYDML7H</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
@@ -932,9 +954,9 @@
 			<key>SystemSKUNumber</key>
 			<string></string>
 			<key>SystemSerialNumber</key>
-			<string>C02CCBZYML7H</string>
+			<string>C02CPMYDML7H</string>
 			<key>SystemUUID</key>
-			<string>6123C923-2015-42C8-9A50-7B93DEF2C69A</string>
+			<string>6400AB6F-53F7-495F-9437-0AF96DA2F929</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
@@ -1047,6 +1069,16 @@
 				<true/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>ResetNvramEntry.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
