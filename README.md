@@ -15,7 +15,7 @@
 
 - [x] Intel Integrated Graphics
 - [x] USB
-- [x] Webcam
+- [] Webcam
 - [x] Brightness controls
 - [x] Battery percentage
 - [x] Sleep
