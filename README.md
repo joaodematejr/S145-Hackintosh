@@ -6,7 +6,7 @@
 | Specs | Details |
 |------------|-------------------------------|
 | Model | Lenovo Ideapad S145 82DJ0001BR |
-| OS | macOS Monterey 12.6 (21G115) |
+| OS | macOS Ventura 13.0 (22A380) |
 | CPU | Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz |
 | RAM | 20 GB |
 | iGPU | Intel HD Graphics ICL RVP BigSur 3072 |
